@@ -13,8 +13,6 @@ public class TwoDayPackage extends Package {
 		super(weight, unitRate);
 		adnl_fee = surcharge;
 		name = "2Day Package";
-
-//		System.out.print("2DP called");
 	}
 
 	public double calculateCost() {

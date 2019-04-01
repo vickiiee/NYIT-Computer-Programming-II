@@ -12,7 +12,6 @@ public class Package {
 	private double cost_per_oz;
 
 	public Package(double weight, double unitRate) {
-//		System.out.print("Package called");
 		this.weight = weight;
 		this.cost_per_oz = unitRate;
 		this.name = "Package";
@@ -23,10 +22,11 @@ public class Package {
 	}
 
 	public String toString() {
-		String senderName = getSender().getName() + ", " + getSender().getAddress() + ", " + getSender().getCity()
-				+ ", " + getSender().getState() + ", " + getSender().getZip();
-		String rName = getRecipient().getName() + ", " + getRecipient().getAddress() + ", " + getRecipient().getCity()
-				+ ", " + getRecipient().getState() + ", " + getRecipient().getZip();
+		String senderName = sender.getName() + ", " + sender.getAddress() + ", " + sender.getCity()
+				+ ", " + sender.getState() + ", " + sender.getZip();
+		String rName = recipient.getName() + ", " + recipient.getAddress() + ", " + recipient.getCity()
+				+ ", " + recipient.getState() + ", " + recipient.getZip();
+		
 		return name + "\n" + "Sender: " + senderName + "\n" + "Recipient: " + rName + "\n" + "Ounces: " + weight
 				+ " Cost/Ounce: $" + cost_per_oz + " Weight based Cost: $" + calculateCost() + "\n";
 	}
