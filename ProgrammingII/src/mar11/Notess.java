@@ -1,8 +1,5 @@
 package mar11;
 
-import mar4.Account;
-import mar4.SavingsAccount;
-
 public class Notess {
 
 	public Notess() {
