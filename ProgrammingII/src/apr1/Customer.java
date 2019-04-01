@@ -7,10 +7,10 @@ public class Customer {
 
 	private String name;
 	private String address;
-	private String city; 
+	private String city;
 	private String state;
 	private String zip;
-	
+
 	public Customer(String name, String address, String city, String state, String zip) {
 //		System.out.print("Customer called");
 		this.name = name;
@@ -59,5 +59,5 @@ public class Customer {
 	public void setZip(String zip) {
 		this.zip = zip;
 	}
-	
+
 }

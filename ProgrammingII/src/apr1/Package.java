@@ -10,31 +10,31 @@ public class Package {
 	private Customer recipient;
 	private double weight;
 	private double cost_per_oz;
-	
+
 	public Package(double weight, double unitRate) {
 //		System.out.print("Package called");
 		this.weight = weight;
 		this.cost_per_oz = unitRate;
 		this.name = "Package";
 	}
-	
+
 	public double calculateCost() {
-		return weight*cost_per_oz;
+		return weight * cost_per_oz;
 	}
-	
+
 	public String toString() {
-		String senderName = getSender().getName()+ ", " +getSender().getAddress()+", " +getSender().getCity()+", " +getSender().getState()+", " +getSender().getZip();
-		String rName = getRecipient().getName()+ ", " +getRecipient().getAddress()+", " +getRecipient().getCity()+", " +getRecipient().getState()+", " +getRecipient().getZip();
-		return name + "\n"
-				+ "Sender: " + senderName + "\n"
-				+ "Recipient: " + rName + "\n"
-				+ "Ounces: " + weight + " Cost/Ounce: $" + cost_per_oz + " Weight based Cost: $" +calculateCost() +"\n";
+		String senderName = getSender().getName() + ", " + getSender().getAddress() + ", " + getSender().getCity()
+				+ ", " + getSender().getState() + ", " + getSender().getZip();
+		String rName = getRecipient().getName() + ", " + getRecipient().getAddress() + ", " + getRecipient().getCity()
+				+ ", " + getRecipient().getState() + ", " + getRecipient().getZip();
+		return name + "\n" + "Sender: " + senderName + "\n" + "Recipient: " + rName + "\n" + "Ounces: " + weight
+				+ " Cost/Ounce: $" + cost_per_oz + " Weight based Cost: $" + calculateCost() + "\n";
 	}
 
 	public void set_sender_info(String name, String street, String city, String state, String zip) {
-		//Michael K","111 One Street","New York","NY","10111
+		// Michael K","111 One Street","New York","NY","10111
 		sender = new Customer(name, street, city, state, zip);
-		
+
 	}
 
 	public void set_recipient_info(String name, String street, String city, String state, String zip) {
@@ -50,7 +50,6 @@ public class Package {
 		return recipient;
 	}
 
-
 	public String getName() {
 		return name;
 	}
@@ -63,7 +62,4 @@ public class Package {
 		return cost_per_oz;
 	}
 
-	
-	
-	
 }
