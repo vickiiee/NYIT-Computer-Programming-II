@@ -5,13 +5,15 @@ import java.util.Scanner;
 
 public class JunkyardReportRun {
 
+	private static Scanner keyboard;
+
+
+
 	public JunkyardReportRun() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public JunkyardReport() {
-		// TODO Auto-generated constructor stub
-	}
+	
 
 	public static void main(String[] args) throws IOException {
 		JunkyardReport jk = new JunkyardReport();
@@ -20,21 +22,20 @@ public class JunkyardReportRun {
 		
 		jk.openFile();
 		
-		analyze = inputFile.nextLine();
 
 
 		System.out.println("\n");
 		// Read lines from the file until no more are left.
-		while (inputFile.hasNext()) {
+	//	while (inputFile.hasNext()) {
 			// Read the next name.
-			String friendName = inputFile.nextLine();
+		//	String friendName = inputFile.nextLine();
 
 			// Display the last name read.
-			System.out.println(friendName);
+		//	System.out.println(friendName);
 		}
 
 		// Close the file.
-		inputFile.close();
+		//inputFile.close();
 	}
 
-}
+

@@ -30,19 +30,26 @@ public class JunkyardReport {
 	public static void main(String[] args) throws IOException {
 		JunkyardReport jk = new JunkyardReport();
 		keyboard = new Scanner(System.in);
-		System.out.print("Enter the filename: ");
+		System.out.print("Enter the filename: "); //src/apr8/Junkyard.txt
 		
 		jk.openFile();
 		
-		System.out.println("Welcome to Luxury Junkyard, INc. the end of month report");
+		System.out.println("Welcome to Luxury Junkyard, Inc. the end of month report");
 		System.out.println("--------------------------------------------------------");
 		
-		System.out.println("Current Selling Prices");
+		System.out.println("CURRENT SELLING PRICES");
 		System.out.println("----------------------");
 		
-		System.out.printf("%-30.30s  %-30.30s%n", "AUDI", "8876.50");
-		System.out.println("--------------------------------------------------------");
+		System.out.printf("%-10.30s  %-30.30s%n", "AUDI", "8876.50"); //%-30.30s
+		System.out.printf("%-10.30s  %-30.30s%n", "BMW", "9909.89");
+		System.out.printf("%-10.30s  %-30.30s%n", "JAGUAR", "10999.99");
+		System.out.printf("%-10.30s  %-30.30s%n", "LEXUS", "7776.69");
+		System.out.println("\n------------------------------------------------------------------");
 		
+		System.out.printf("%-15.30s  %-15.30s  %-15.30s  %-15.30s%n", "SALESPERSON", "MODEL", "COUNT", "TOTAL SOLD $");
+		System.out.printf("%-15.30s  %-15.30s  %-15.30s  %-15.30s%n", "ID", "DESCRIPTION", "SOLD", "PER MODEL");
+		System.out.println("------------------------------------------------------------------");
+	
 		
 		
 		
@@ -90,7 +97,7 @@ public class JunkyardReport {
 			file = new File(filename); // Freaking src,
 			inputFile = new Scanner(file);
 
-			System.out.println("\nFile Found!");
+			System.out.println("\nFile Found!\n");
 		} catch (FileNotFoundException e) {
 
 			System.out.print("File not found, please enter the file name:");

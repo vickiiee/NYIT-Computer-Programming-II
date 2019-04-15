@@ -7,7 +7,11 @@ public class Salesperson {
 	private String carModel;
 	private String numCarSold;
 	
-	public Salesperson(String id, String totalSales, String carModel, String numCarSold) {
+	public Salesperson(int id, int [] cars) {
+		
+	}
+	
+	/*public Salesperson(String id, String totalSales, String carModel, String numCarSold) {
 		this.id = id; 
 		this.totalSales = totalSales;
 		this.carModel = carModel;
@@ -33,6 +37,6 @@ public class Salesperson {
 		this.totalSales = totalSales;
 		this.carModel = carModel;
 		this.numCarSold = numCarSold;
-	}
+	}*/
 
 }
