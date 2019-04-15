@@ -3,6 +3,7 @@ package apr8;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -16,12 +17,16 @@ public class JunkyardReport {
 	
 	private static String analyze;
 	// private Scanner userInput;
+	
+	
 
 	private String id;
 	private String numCarsSold;
 	private String modelCode; //type of car
 	
-	int [] cars;
+	private static ArrayList<Salesperson> ppl;
+	
+	static int [] cars;
 	/*
 	 * AUDI:   0
 	 * BMW:    1
@@ -36,6 +41,8 @@ public class JunkyardReport {
 	}
 
 	public static void main(String[] args) throws IOException {
+		ppl = new ArrayList<Salesperson>();
+		cars = new int [4];
 		JunkyardReport jk = new JunkyardReport();
 		keyboard = new Scanner(System.in);
 		System.out.print("Enter the filename: "); //src/apr8/Junkyard.txt
@@ -71,7 +78,44 @@ public class JunkyardReport {
 		int modelCode = x.nextInt();
 		int numSold = x.nextInt();
 		
-		System.out.println("TSET" + id + "TSET" +numOfSales +"TSET" + modelCode +"TSET" + numSold);
+		System.out.println("...." + id + "...." +numOfSales +"...." + modelCode +"...." + numSold);
+		
+		if(modelCode ==1) {
+			cars[0] = numSold;
+		}else if(modelCode ==2) {
+			cars[1] = numSold;
+		}else if(modelCode ==3) {
+			cars[2] = numSold;
+		}else if(modelCode ==4) {
+			cars[3] = numSold;
+		}
+		
+		numOfSales--;
+		while(numOfSales>0) {
+			analyze = inputFile.nextLine();
+			Scanner tes = new Scanner(analyze);
+			
+		
+			 
+			 modelCode = tes.nextInt();
+			 numSold = tes.nextInt();
+			 
+			 if(modelCode ==1) {
+					cars[0] = numSold;
+				}else if(modelCode ==2) {
+					cars[1] = numSold;
+				}else if(modelCode ==3) {
+					cars[2] = numSold;
+				}else if(modelCode ==4) {
+					cars[3] = numSold;
+				}
+			 numOfSales--;
+			 
+			 System.out.println("...." + id + "...." +numOfSales +"...." + modelCode +"...." + numSold);
+		}
+		
+		ppl.add(new Salesperson(id, cars));
+		
 		
 		/*String data = inputFile.nextLine();
 		String[] pieces = data.split(" ");
