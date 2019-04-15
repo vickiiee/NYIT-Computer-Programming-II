@@ -21,6 +21,14 @@ public class JunkyardReport {
 	private String numCarsSold;
 	private String modelCode; //type of car
 	
+	int [] cars;
+	/*
+	 * AUDI:   0
+	 * BMW:    1
+	 * JAGUAR: 2
+	 * LEXUS:  3
+	 */
+	
 	
 	
 	public JunkyardReport() {
@@ -55,6 +63,15 @@ public class JunkyardReport {
 		
 		
 		analyze = inputFile.nextLine();
+		Scanner x = new Scanner(analyze);
+		
+		//zybooks!!!!
+		int id = x.nextInt();
+		int numOfSales = x.nextInt();
+		int modelCode = x.nextInt();
+		int numSold = x.nextInt();
+		
+		System.out.println("TSET" + id + "TSET" +numOfSales +"TSET" + modelCode +"TSET" + numSold);
 		
 		/*String data = inputFile.nextLine();
 		String[] pieces = data.split(" ");
