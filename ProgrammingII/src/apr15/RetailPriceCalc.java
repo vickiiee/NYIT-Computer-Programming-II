@@ -41,6 +41,15 @@ public class RetailPriceCalc extends JFrame{
 		
 		new RetailPriceCalc();
 		
+		String name1;
+	      String name2;
+
+	      name1 = "Robb";
+	      name2 = "Harry";
+
+	      System.out.printf("%-8s/\n", name1);
+	      System.out.printf("%-8s/\n", name2);
+		
 		
 	}
 
