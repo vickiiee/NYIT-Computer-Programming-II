@@ -66,7 +66,7 @@ public class JoeAutomotive extends JFrame{
 
 	public void buildPanel() {
 		
-		//setLayout(new GridLayout(12,1));
+		//setLayout(new GridLayout(20,1));
 		
 	
 		
