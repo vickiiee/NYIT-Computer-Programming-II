@@ -6,7 +6,9 @@ public class Notes {
 		/*
 		 * GUI!!
 		 * 
+		 * Check out Brandi's bagel house
 		 * 
+		 * Just check out zybooks... like srsly
 		 */
 	}
 
