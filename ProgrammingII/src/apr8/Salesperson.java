@@ -1,5 +1,8 @@
 package apr8;
 
+//VIckie Wu
+//Apr 8 2019
+
 public class Salesperson {
 
 	private int id;
