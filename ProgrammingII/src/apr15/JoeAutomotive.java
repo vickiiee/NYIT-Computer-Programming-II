@@ -116,7 +116,7 @@ public class JoeAutomotive extends JFrame{
 
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
-		      
+		      total = 0; //Fixed
 		      if(oil.isSelected()) {
 		    	  total+=26;
 		      }
