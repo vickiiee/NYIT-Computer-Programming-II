@@ -1,7 +1,8 @@
 package apr22;
 
 ////////////////////////////////////////////////////////////////
-class LinkStackS {
+class LinkStackS {//Given
+	
 	private StringLinkedList theList;
 	private int itsSize;
 

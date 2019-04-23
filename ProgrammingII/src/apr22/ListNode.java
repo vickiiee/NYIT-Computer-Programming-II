@@ -1,6 +1,7 @@
 package apr22;
 
-public class ListNode {
+public class ListNode {//Given
+	
 	private String data;
 	private ListNode link;
 

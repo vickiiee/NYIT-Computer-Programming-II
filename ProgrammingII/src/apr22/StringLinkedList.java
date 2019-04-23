@@ -1,6 +1,6 @@
 package apr22;
 
-public class StringLinkedList {
+public class StringLinkedList {//Given
 	private ListNode head;
 
 	public StringLinkedList() {
