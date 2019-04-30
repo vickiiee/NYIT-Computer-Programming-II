@@ -14,8 +14,8 @@ public class RecursionExamples {
 		System.out.println(f.addEvenTo(6));
 		System.out.println(f.bunnyEars(4));
 		//f.bunnyEars2(3);
-		System.out.println(f.bunnyEars2(3)); //work on it
-		System.out.println(f.triangle(5));
+		System.out.println(f.bunnyEars2(5)); //work on it
+		System.out.println(f.triangle(10));
 	}
 
 	public int powerN(int y, int z) {
@@ -68,7 +68,7 @@ public class RecursionExamples {
 		if (n == 0) {
 			return 0;
 			
-		}
+		}else
 		if (n % 2 == 0 && n !=0) // even
 			return (3 + bunnyEars(n - 1));
 
