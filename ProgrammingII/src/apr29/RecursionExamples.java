@@ -1,6 +1,6 @@
 package apr29;
 //Vickie Wu
-//5/6/2019
+//Apr29
 
 public class RecursionExamples {
 
@@ -63,13 +63,13 @@ public class RecursionExamples {
 	 * bunnyEars(0) = 0 bunnyEars(1) = 2 bunnyEars(2) = 4
 	 */
 
-	
-/*	public int bunnyEars2(int n) {
+///Work on oit --------------------------------------------------------------------------------------------------------------------------	
+	public int bunnyEars2(int n) {
 		/*
 		 * bunnyEars2(0) = 0 
 		 * bunnyEars2(1) = 2 //(2+ bunnyEars2(0)) 
 		 * bunnyEars2(2) = 5 //(3+ bunnyEars2(1))
-		 
+		 */
 		if (n == 0) {
 			return 0;
 			
@@ -105,5 +105,5 @@ public class RecursionExamples {
 			g+= "*";
 		}
 		return getT(n-1);
-	}*/
+	}
 }
