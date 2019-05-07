@@ -18,7 +18,7 @@ public class FileReadDemo
       //String filename = keyboard.nextLine();
 
       // Open the file.
-      File file = new File("src/apr8/Junkyard.txt"); //Freaking src, 
+      File file = new File("src/may6/test1.txt"); //Freaking src, src/apr8/Junkyard.txt
       Scanner inputFile = new Scanner(file);
       
       System.out.println("\n");
