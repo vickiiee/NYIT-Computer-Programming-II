@@ -141,11 +141,11 @@ public class Bingo {
 		
 		shuffle(call);
 		
-		//how to write file: 
+		//how to write file: in depth: https://howtodoinjava.com/java/io/java-write-to-file/
 		/*
 		 * 1) have an existing file in folder // to do this, go into file explorer and into folder where the java code is. select correct package folder, and then right click to create new .txt file
 		 * 2) create a string with the stuff you want to put in file
-		 * 3) call instance FileWriter with the file name in parameter
+		 * 3) call instance FileWriter with the file name in parameter //determines location of file you want to edit 
 		 * 4) filewriter instance.write(filename) //call write() method
 		 * 
 		 */
