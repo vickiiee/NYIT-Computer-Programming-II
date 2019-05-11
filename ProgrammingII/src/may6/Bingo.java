@@ -140,6 +140,41 @@ public class Bingo {
 //		throw new RuntimeException("You need to implement this method");
 		
 		shuffle(call);
+		
+		//how to write file: 
+		/*
+		 * 1) have an existing file in folder
+		 * 2) create a string with the stuff you want to put in file
+		 * 3) call instance FileWriter with the file name in parameter
+		 * 4) filewriter instance.write(filename) //call write() method
+		 * 
+		 */
+		    /*String fileContent = "Hello Learner !! Welcome to howtodoinjava.com.";
+		     
+		    FileWriter fileWriter = new FileWriter(outputFile);
+		    fileWriter.write(fileContent);
+		    fileWriter.close();
+		*/
+		
+		//create string with what you want to put in file
+		String fileContent = "";
+
+		for (int row = 0; row < card.length; row++) {
+			for (int col = 0; col < card[0].length; col++) {
+				fileContent += card[row][col] + " ";
+			}
+			fileContent += "\n";
+		}
+		//fileContent += "\n";
+
+		for (int i = 0; i < call.size(); i++) {
+			fileContent += call.get(i) + " ";
+		}
+		
+		//create instance of fileWriter to show where you want the content to be in
+		FileWriter file = new FileWriter(outputFile);
+		file.write(fileContent);
+		file.close();
 	}
 
 	/**
