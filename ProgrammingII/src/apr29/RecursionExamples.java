@@ -17,9 +17,9 @@ public class RecursionExamples {
 		System.out.println(f.powerN(3,2));
 		System.out.println(f.addEvenTo(8));
 		System.out.println(f.bunnyEars(3));
-		
+		System.out.println(f.bunnyEars2(3)); //work on it
 		/*//f.bunnyEars2(3);
-		System.out.println(f.bunnyEars2(5)); //work on it
+		
 		System.out.println(f.triangle(10));*/
 	}
 
@@ -75,13 +75,19 @@ public class RecursionExamples {
 			
 		}else
 		if (n % 2 == 0 && n !=0) // even
-			return (3 + bunnyEars(n - 1));
+			return (3 + bunnyEars2(n - 1));
 
 		else if (n % 2 == 1) // odd
-			return (2 + bunnyEars(n - 1));
+			return (2 + bunnyEars2(n - 1));
 		
 		return -1;
 	}
+	
+	/*public int bunnyEars2(int bunnies) {
+		  if (bunnies == 0) return 0;
+		  if (bunnies % 2 == 0) return 3 + bunnyEars2(bunnies-1);
+		  else return 2 + bunnyEars2(bunnies-1);
+		}*/ //coding bat. fixed problem.. correct code just called the wrong method (bunnyEars instead of bunnyEars2) so dumb
 	
 	public String triangle(int rows) {
 		String g = "";
