@@ -17,10 +17,12 @@ public class RecursionExamples {
 		System.out.println(f.powerN(3,2));
 		System.out.println(f.addEvenTo(8));
 		System.out.println(f.bunnyEars(3));
-		System.out.println(f.bunnyEars2(3)); //work on it
+		System.out.println(f.bunnyEars2(3)); //work on it --> done!
+		
+		System.out.println(f.triangle(10)); //work on it
 		/*//f.bunnyEars2(3);
 		
-		System.out.println(f.triangle(10));*/
+		*/
 	}
 
 	public int powerN(int y, int z) {
@@ -95,21 +97,27 @@ public class RecursionExamples {
 			return "";
 		}
 		else {
-			for(int i = 0; i < rows; i++) {
-				g+="*";
-			}
-		//	getT(rows);
+		//for(int i = 0; i < rows; i++) {
+			//	g+="*";
+			//}
+			g =getT(rows, g);
 		}
-			return triangle(rows -1)+g+"\n";
+			return triangle(rows -1)+ g+"\n";
 		
 		
 	}
 	
-	public String getT(int n ) {
-		String g = "";
-		if (n ==1) {
-			g+= "*";
+	public String getT(int n, String g ) { //in place of a for loop
+		// g = "";
+		if (n < 1) {
+			return "";
+			// return g;
+		} else {
+			g += "*";
+			return g+getT(n - 1, g);
 		}
-		return getT(n-1);
+			
+		
+		
 	}
 }

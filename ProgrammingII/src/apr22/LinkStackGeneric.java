@@ -3,10 +3,13 @@ package apr22;
 //Vickie Wu
 //4/22/19
 
-public class LinkStackGeneric<T> { // based on LinkStackS but Generic
+// based on LinkStackS but Generic
+public class LinkStackGeneric<T> { //Put generic parameter where class name is. can have 2 ex: <x,y>
 
-	private LinkedList2<T> theList;
+	private LinkedList2<T> theList; 
 	private int itsSize;
+	
+	private T [] example; //can replace only reference types //check slides
 
 //--------------------------------------------------------------
 	public LinkStackGeneric() // constructor
